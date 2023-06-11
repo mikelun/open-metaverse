@@ -23,6 +23,10 @@ export function addPlayerOverlap(self) {
     }
 }
 
+export function checkOverlap(object1, object2) {
+    return true;
+}
+
 function drawbattleShadow(self) {
     let x = 200;
     let y = 650;
