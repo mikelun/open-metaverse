@@ -55,7 +55,7 @@ function createCell(x, y, chestType, price) {
         backgroundEffect.setTint(0xff77aa);
     }
     backgroundEffect.setAlpha(1);
-    backgroundEffect.play('background-lighting');
+    // backgroundEffect.play('background-lighting');
 
 
     const chest = self.add.image(x + 30, y + 50, `chest${chestType}`).setOrigin(0, 0).setScale(3);

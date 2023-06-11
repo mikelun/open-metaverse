@@ -23,13 +23,6 @@ export function addPlayerOverlap(self) {
     }
 }
 
-export function checkOverlap(a, b) {
-    var boundsA = a.getBounds();
-    var boundsB = b.getBounds();
-
-    return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
-}
-
 function drawbattleShadow(self) {
     let x = 200;
     let y = 650;

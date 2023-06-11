@@ -54,10 +54,6 @@ export function addMap4(self) {
     // add animation for tileset day
     addAnimationForMap(self, cafe, tilemapDayTileset);
 
-
-    // fix player position
-    //self.playerAddX = 0;
-    //self.playerAddY = 0;
     blackoutRectangle = self.add.rectangle(0, 0, 10000, 100000, 0x000000, 0.3);
 
     addLightsToMap(self);
@@ -110,7 +106,6 @@ function addEffect(self, x, y, name) {
         effect.play(name);
     }
     return effect;
-
 }
 function addLightsToMap(self) {
     const warmLight = { r: 255, g: 160, b: 0 };
@@ -179,12 +174,12 @@ export function addUpdateForMap4(self, time, delta) {
     entrances.forEach(object => {
         object.entrance.alpha = (Math.sin(self.time.now / 500) * 0.4);
         if (self.player) {
-            if (checkOverlap(self.player, object.entrance)) {
-                entranceMapId = object.mapId;
-            } else if (entranceMapId === object.mapId) {
-                entranceMapId = null;
-                spaceKey = false;
-            }
+            // if (checkOverlap(self.player, object.entrance)) {
+            //     entranceMapId = object.mapId;
+            // } else if (entranceMapId === object.mapId) {
+            //     entranceMapId = null;
+            //     spaceKey = false;
+            // }
         }
     });
 

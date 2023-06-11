@@ -39,14 +39,6 @@ export function initKeysForController(newSelf) {
             keys[i].isDown = false;
         });
     }
-
-
-    // self.keyUp = self.input.keyboard.addKey('W');
-    // self.keyDown = self.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
-    // self.keyLeft = self.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
-    // self.keyRight = self.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
-    // self.shift = self.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);   
-
 }
 
 export function blockMovement() {

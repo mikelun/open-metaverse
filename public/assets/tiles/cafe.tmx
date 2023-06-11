@@ -27,7 +27,7 @@
     <frame tileid="377" duration="100"/>
     <frame tileid="413" duration="100"/>
    </animation>
-  </tile>
+  </tile> 
   <tile id="162">
    <animation>
     <frame tileid="162" duration="100"/>

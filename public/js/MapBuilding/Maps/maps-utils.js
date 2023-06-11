@@ -53,5 +53,4 @@ export function startMapTransition(self, arrayLights) {
             });
         }
     })
-
 }

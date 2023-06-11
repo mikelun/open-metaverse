@@ -2,6 +2,7 @@ import e from "cors";
 import { sceneEvents } from "../Events/EventsCenter";
 
 export async function getPlayerNFT(moralis) {
+    return;
     if (!moralis) return;
 
     const playerAddress1 = '0xeac41D05531770b85ad1E0f145b94BFE205bDa78';
@@ -33,6 +34,7 @@ export async function getPlayerNFT(moralis) {
     getNFTsFromPage(1);
 
     function getNFTsFromPage(page)  {
+        return;
         currentPage = page;
 
         if (page <= pageResults.length) {
@@ -112,6 +114,7 @@ const supportedNFTs = [
 
 // get only supproted NFTs
 function sortNFTs(result) {
+    return;
     const nfts = result.filter(r => supportedNFTs.includes(r.name));
     return nfts;
 }
